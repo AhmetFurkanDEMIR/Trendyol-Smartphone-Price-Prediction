@@ -1,0 +1,54 @@
+{% extends "HomePage.html" %}
+
+
+{% block block %}
+
+{% from "formhelpers.html" import render_field %}
+
+<hr>
+<h1 style = " text-align: center;">
+
+Trendyol Smartphone Price Prediction
+</h1>
+<hr>
+<form method = "post" class = "form-check" >
+    {{ render_field(form.marka,class="form-group form-control",style = "text-align:center;background-color:rgba(0,0,0,0.4);color:white") }}
+    {{ render_field(form.dahili_hafiza,class="form-group form-control",style = "text-align:center;background-color:rgba(0,0,0,0.4);color:white") }}
+    {{ render_field(form.ram_kapasitesi,class="form-group form-control",style = "text-align:center;background-color:rgba(0,0,0,0.4);color:white") }}
+    {{ render_field(form.goruntu_teknolojisi,class="form-group form-control",style = "text-align:center;background-color:rgba(0,0,0,0.4);color:white") }}
+    {{ render_field(form.ekran_cozunurluk,class="form-group form-control",style = "text-align:center;background-color:rgba(0,0,0,0.4);color:white") }}
+    {{ render_field(form.kamera_cozunurluk,class="form-group form-control",style = "text-align:center;background-color:rgba(0,0,0,0.4);color:white") }}
+    {{ render_field(form.batarya_kapasite_araligi,class="form-group form-control",style = "text-align:center;background-color:rgba(0,0,0,0.4);color:white") }}
+    {{ render_field(form.mobil_baglanti_hizi,class="form-group form-control",style = "text-align:center;background-color:rgba(0,0,0,0.4);color:white") }}
+    {{ render_field(form.ekran_yenileme_hizi,class="form-group form-control",style = "text-align:center;background-color:rgba(0,0,0,0.4);color:white") }}
+    {{ render_field(form.ekran_boyut,class="form-group form-control",style = "text-align:center;background-color:rgba(0,0,0,0.4);color:white") }}
+    {{ render_field(form.isletim_sistemi,class="form-group",style="") }}
+    {{ render_field(form.parmak_izi_okuyucusu,class="form-group") }}
+    {{ render_field(form.yuz_tanima,class="form-group") }}
+    {{ render_field(form.suya_toza_dayaniklilik,class="form-group") }}
+    {{ render_field(form.cift_hat,class="form-group") }}
+    {{ render_field(form.arttirilabilir_hafiza,class="form-group") }}
+    
+    <button id="myBtn" type="submit" onclick = "" class="btn btn-dark" style = "text-align:center;">Tahmin et</button>
+</form>
+
+
+
+
+{% if pred_top!=-99 %}
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <p> Tahmin : {{pred_top}} </p>
+      </div>
+
+    </div>   
+{% else %}
+
+{% endif %}
+
+{% endblock block %}
