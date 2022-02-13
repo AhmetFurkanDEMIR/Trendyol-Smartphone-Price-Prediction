@@ -72,6 +72,11 @@ sudo pip3 install -r requirements.txt
     sudo python3 mainWeb.py
     ```
 
+* App Video
+
+[](https://user-images.githubusercontent.com/54184905/153742827-5242ad78-f646-4b52-837d-a3a4e3a8e202.mp4)
+
+
 ### Developers of the project
 
 [**Ahmet Furkan DEMIR**](https://www.linkedin.com/in/1dfurkan/)
