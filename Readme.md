@@ -7,8 +7,6 @@
 
 This web application makes a price estimate based on the features of your dream phone, thus allowing you to determine the features of your dream phone according to your budget. Web application takes predictions from the model created using smartphone data pulled from Trendyol e-commerce site, the phone features entered are given to the linear regression model and a price estimate is obtained.
 
-[**The deployed version of the website**](http://52.45.118.34/)
-
 [**Dataset Kaggle link**](https://www.kaggle.com/ahmetfurkandemr/trendyol-smartphones)
 
 [**Our work on the dataset (GPU)**](https://www.kaggle.com/ahmetfurkandemr/trendyol-phone-price-prediction-with-rapids)
